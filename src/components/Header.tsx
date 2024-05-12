@@ -1,17 +1,18 @@
 'use client'
 
 import { usePathname } from "next/navigation";
+import { useState } from "react";
+
+import PrimaryButton from "./PrimaryButton";
 import { FiMenu } from "react-icons/fi";
 import { FiX } from "react-icons/fi";
 
-import PrimaryButton from "./PrimaryButton";
-import { useState } from "react";
 
 export default function Header() {
 
-    const [openMenu, setOpenMenu] = useState(false);
-
     const pathname = usePathname();
+
+    const [openMenu, setOpenMenu] = useState(false);
 
     const links = [
         {
@@ -40,8 +41,10 @@ export default function Header() {
 
         <header className="text-black lg:flex font-Poppins text-base m-12 justify-center items-center bg-brancoGrace">
 
-            <div className="flex items-center lg:justify-center space-x-2">
-                <div className="text-cinzaGrace lg:hidden" onClick={() => setOpenMenu((prevValue) => !prevValue)}>{openMenu ? <FiX size={24} /> : <FiMenu size={24} />}</div>
+            <div className="flex items-center space-x-2 lg:justify-center">
+                <div className="text-cinzaGrace lg:hidden" onClick={() => setOpenMenu((prevValue) => !prevValue)}>
+                    {openMenu ? <FiX size={24} /> : <FiMenu size={24} />}
+                </div>
                 <img src="./logoHorizontal.png" alt="Logo do GRACE" width={125} />
             </div>
 
