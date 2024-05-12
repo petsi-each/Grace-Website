@@ -8,11 +8,16 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      colors: {
+        brancoGrace:"#FEFDFD",
+        cinzaGrace: "#504945",
+        vinhoGrace: "#870D0D",
+        laranjaGrace: "#FA8632",
+        pessegoGrace: "#FFB884",
       },
+      fontFamily: {
+        Poppins: ['Poppins', 'serif']
+      }
     },
   },
   plugins: [],
