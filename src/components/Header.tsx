@@ -1,6 +1,7 @@
 'use client'
 
 import { usePathname } from "next/navigation";
+import PrimaryButton from "./PrimaryButton";
 
 export default function Header(){
     
@@ -40,7 +41,7 @@ export default function Header(){
                 }
             </nav>
             <div>
-                {/* button */}
+                <PrimaryButton onClick={()=>window.open("https://www.instagram.com/graceusp/", "_blank")} title={"Entre em contato"} />
             </div>
         </header>
 
