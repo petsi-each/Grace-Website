@@ -1,3 +1,7 @@
+'use client'
+
+import { usePathname } from "next/navigation";
+
 export default function Header(){
     
     const links = [
@@ -7,25 +11,36 @@ export default function Header(){
         },
         {
             title: "Quem somos?",
-            ref: "/quem-somos"
+            ref: "http://each.uspnet.usp.br/petsi/grace/?page_id=94"
+        },
+        {
+            title: "Fala, Grace!",
+            ref: "http://each.uspnet.usp.br/petsi/grace/?page_id=699"
+        },
+        {
+            title: "Atividades",
+            ref: "http://each.uspnet.usp.br/petsi/grace/?page_id=96"
+        },
+        {
+            title: "Conteúdo",
+            ref: "http://each.uspnet.usp.br/petsi/grace/?page_id=104"
         }
     ]
-
+    const pathname = usePathname();
     
     return(
        
-        <header className="text-black flex">
+        <header className="text-black md:flex font-Poppins text-base m-12 justify-center items-center">
             <div>
-                <img src="./logoHorizontal.png" alt="Logo do GRACE" />
+                <img src="./logoHorizontal.png" alt="Logo do GRACE" width={125}/>
             </div>
-            <div className="flex grow items-center justify-center">
+            <nav className="flex md:grow md:flex-row flex-col md:items-center md:justify-center my-2 md:my-0">
                 {
-                    links.map((item) => (<p key={item.title}>{item.title}</p>))
+                    links.map((item) => (<a className={`md:mx-4 md:my-0 xl:mx-8 my-1 hover:font-semibold transition-all ${pathname == item.ref ? 'text-vermelhoGrace font-semibold' : ''}`} href={item.ref} target="_blank" key={item.title}>{item.title}</a>))
                 }
-            </div>
+            </nav>
             <div>
-                { /* entre em contato */ }
-                a
+                {/* button */}
             </div>
         </header>
 
