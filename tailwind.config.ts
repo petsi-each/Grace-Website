@@ -14,6 +14,7 @@ const config: Config = {
         vinhoGrace: "#870D0D",
         laranjaGrace: "#FA8632",
         pessegoGrace: "#FFB884",
+        vermelhoGrace: "#E7442B",
       },
       fontFamily: {
         Poppins: ['Poppins', 'serif']
