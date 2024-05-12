@@ -15,6 +15,9 @@ const config: Config = {
         laranjaGrace: "#FA8632",
         pessegoGrace: "#FFB884",
       },
+      fontFamily: {
+        Poppins: ['Poppins', 'serif']
+      }
     },
   },
   plugins: [],
