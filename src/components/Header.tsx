@@ -40,7 +40,7 @@ export default function Header() {
 
     return (
 
-        <header className="text-black font-Poppins m-4 lg:flex lg:justify-center lg:items-center">
+        <header className="text-black font-Poppins m-4 lg:flex lg:justify-center lg:items-center relative">
 
             <div className="flex items-center">
 
@@ -52,7 +52,8 @@ export default function Header() {
 
             </div>
 
-            <section className={`drop-shadow lg:flex lg:flex-grow ${openMenu ? 'max-lg:bg-brancoGrace rounded-md p-4 my-2' : 'max-lg:hidden'}`} >
+            <section className={`drop-shadow w-full rounded-md p-4 my-2 transition-all duration-300 max-lg:absolute max-lg:bg-brancoGrace lg:flex lg:flex-grow lg:visible lg:opacity-100 ${openMenu ? ' opacity-100 visible' : ' opacity-0 invisible'}`} >
+
 
                 <nav className={`flex my-2 grow flex-col lg:flex-row lg:items-center lg:justify-center lg:my-0`}>
                     {
