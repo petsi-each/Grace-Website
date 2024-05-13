@@ -59,7 +59,7 @@ export default function Header() {
                     {
                         navLinks.map((link) => (
 
-                            <a className={`mb-2 transition-all hover:font-semibold lg:my-0 lg:mx-4 xl:mx-8  ${pathname == link.ref ? 'text-vermelhoGrace font-semibold' : ''}`}
+                            <a className={`mb-2 transition-all lg:my-0 lg:mx-4 xl:mx-8  ${pathname == link.ref ? 'text-vermelhoGrace font-semibold hover:font-bold' : 'hover:font-semibold '}`}
                                 href={link.ref} target={link.ref.includes('.') ? "_blank" : "_self"}
                                 key={link.title}>
                                 {link.title}
