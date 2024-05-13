@@ -10,11 +10,7 @@ import { FiX } from "react-icons/fi";
 
 export default function Header() {
 
-    const pathname = usePathname();
-
-    const [openMenu, setOpenMenu] = useState(false);
-
-    const links = [
+    const navLinks = [
         {
             title: "Início",
             ref: "/"
@@ -37,6 +33,11 @@ export default function Header() {
         }
     ]
 
+    const pathname = usePathname();
+
+    const [openMenu, setOpenMenu] = useState(false);
+
+
     return (
 
         <header className="text-black font-Poppins m-4 lg:flex lg:justify-center lg:items-center">
@@ -55,12 +56,12 @@ export default function Header() {
 
                 <nav className={`flex my-2 grow flex-col lg:flex-row lg:items-center lg:justify-center lg:my-0`}>
                     {
-                        links.map((item) => (
+                        navLinks.map((link) => (
 
-                            <a className={`mb-2 transition-all hover:font-semibold lg:my-0 lg:mx-4 xl:mx-8  ${pathname == item.ref ? 'text-vermelhoGrace font-semibold' : ''}`}
-                                href={item.ref} target={item.ref.includes('.') ? "_blank" : "_self"}
-                                key={item.title}>
-                                {item.title}
+                            <a className={`mb-2 transition-all hover:font-semibold lg:my-0 lg:mx-4 xl:mx-8  ${pathname == link.ref ? 'text-vermelhoGrace font-semibold' : ''}`}
+                                href={link.ref} target={link.ref.includes('.') ? "_blank" : "_self"}
+                                key={link.title}>
+                                {link.title}
                             </a>
                         ))
                     }
