@@ -46,13 +46,13 @@ export default function Header() {
 
                 <img src="./logoHorizontal.png" alt="Logo do GRACE" width={125} />
 
-                <div className="text-cinzaGrace w-full flex justify-end lg:hidden" onClick={() => setOpenMenu((prevValue) => !prevValue)}>
+                <button className="text-cinzaGrace w-full flex justify-end lg:hidden" onClick={() => setOpenMenu((prevValue) => !prevValue)}>
                     {openMenu ? <FiX size={30} /> : <FiMenu size={30} />}
-                </div>
+                </button>
 
             </div>
 
-            <div className={`drop-shadow lg:flex lg:flex-grow ${openMenu ? 'max-lg:bg-brancoGrace rounded-md p-4 my-2' : 'max-lg:hidden'}`} >
+            <section className={`drop-shadow lg:flex lg:flex-grow ${openMenu ? 'max-lg:bg-brancoGrace rounded-md p-4 my-2' : 'max-lg:hidden'}`} >
 
                 <nav className={`flex my-2 grow flex-col lg:flex-row lg:items-center lg:justify-center lg:my-0`}>
                     {
@@ -71,7 +71,7 @@ export default function Header() {
                     <PrimaryButton onClick={() => window.open("https://www.instagram.com/graceusp/", "_blank")} title={"Entre em contato"} />
                 </div>
 
-            </div>
+            </section>
         </header>
 
     );
