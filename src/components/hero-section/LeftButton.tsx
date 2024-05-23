@@ -5,7 +5,7 @@ interface PrimaryButtonProps{
     onClick: () => void,
 }
 
-export default function PrimaryButton(props: PrimaryButtonProps){
+export default function LeftButton(props: PrimaryButtonProps){
   
     return(
        
