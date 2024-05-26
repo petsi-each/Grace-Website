@@ -4,8 +4,9 @@ import Balao from "./componentesAuxiliares/Balao";
 
 export default function Oqueeograce() {
     return (
-        <section className="mt-16 p-24 bg-[url('/home/oqueeograceFundo.svg')] bg-no-repeat bg-cover w-full h-screen flex items-center justify-center"> {/*ainda preciso resolver a questão da altura da imagem */}
-            <div className="flex flex-col items-center justify-center">
+        <section className="my-16 grid">
+            <img src="/home/oqueeograceFundo.svg" className="col-start-1 row-start-1 w-full"/> 
+            <div className="p-32 col-start-1 row-start-1 flex flex-col items-center"> {/*preferi sem justify-center*/}
                 <h1 className="m-8 font-Poppins font-bold text-brancoGrace text-3xl">O que fazemos?</h1>
                 <p className="font-Poppins text-center text-brancoGrace text-lg">O GRACE é um projeto de extensão do curso de Sistemas de Informação (Escola de Artes, CIências e Humanidades) da Universidade de São Paulo. Nosso objetivo é <b>incentivar</b> e <b>manter</b> meninas na área da computação, a fim de diminuir a disparidade de gênero, por meio de atividades práticas e tecnológicas!</p>
                 <div className="mt-16 grid grid-cols-3 gap-x-5 gap-y-4"> {/*não me preocupei com responsividade mas PRECISAMOS*/}
