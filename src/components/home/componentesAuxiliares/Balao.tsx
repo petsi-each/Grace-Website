@@ -1,4 +1,3 @@
-'use cliente'
 
 interface Balaopropos{
     imagem: string,

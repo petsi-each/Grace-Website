@@ -1,4 +1,3 @@
-'use client'
 
 import Balao from "./componentesAuxiliares/Balao";
 
