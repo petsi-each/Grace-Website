@@ -6,7 +6,7 @@ export default function Oqueeograce() {
         <div className="my-16">
             <img src="/home/oqueeograceBGT.svg" className="-mb-1 w-screen" /> {/*priorizar uso de w-screen over w-full*/}
             <section className="bg-gradient-to-b from-vermelhoGrace to-[#feb581] py-2 px-32 flex flex-col items-center"> {/*preferi sem justify-center*/}
-                <h1 className="m-8 font-Poppins font-bold text-brancoGrace text-3xl">O que fazemos?</h1>
+                <h1 className="mb-12 font-Poppins font-bold text-brancoGrace text-4xl">O que fazemos?</h1>
                 <p className="font-Poppins text-center text-brancoGrace text-lg">O GRACE é um projeto de extensão do curso de Sistemas de Informação (Escola de Artes, CIências e Humanidades) da Universidade de São Paulo. Nosso objetivo é <b>incentivar</b> e <b>manter</b> meninas na área da computação, a fim de diminuir a disparidade de gênero, por meio de atividades práticas e tecnológicas!</p>
                 <div className="mt-16 grid grid-cols-3 gap-x-5 gap-y-4"> {/*não me preocupei com responsividade mas PRECISAMOS*/}
                     <div>
