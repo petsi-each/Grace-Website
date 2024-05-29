@@ -39,8 +39,8 @@ export default function GaleriaDeAtividades() {
 
             <section className="grid grid-cols-1 xl:grid-cols-3 gap-8 px-8">
                 {
-                    articles.map((article) => (
-                        <article className="flex flex-col items-center justify-center">
+                    articles.map((article, idx) => (
+                        <article key={idx} className="flex flex-col items-center justify-center">
                             <div className={`m-4 drop-shadow-xl rounded-full h-32 w-32 flex items-center justify-center text-white ${article.cor}`}>
                                 {article.icon}
                             </div>
