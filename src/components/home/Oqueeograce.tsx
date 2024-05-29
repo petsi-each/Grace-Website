@@ -1,5 +1,5 @@
 
-import Balao from "./componentesAuxiliares/Balao";
+import Balao from "./components/Balao";
 
 export default function Oqueeograce() {
     return (
