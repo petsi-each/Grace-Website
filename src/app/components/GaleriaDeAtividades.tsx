@@ -48,7 +48,7 @@ export default function GaleriaDeAtividades() {
                             </div>
                             <h2 className="font-bold text-xl"> {article.titulo} </h2>
                             <p className="text-base pb-2"> {article.descricao} </p>
-                            <a className="drop-shadow text-base text-vermelhoGrace hover:font-semibold flex items-center justify-center space-x-2 transition-all" href={article.link}> <p>Projeto</p> <FiArrowRight /> </a>
+                            <a className="drop-shadow text-base text-vermelhoGrace hover:font-semibold flex items-center justify-center space-x-2 duration-100 transition-all" href={article.link}> <p>Projeto</p> <FiArrowRight /> </a>
                         </article>
                     ))
                 }
