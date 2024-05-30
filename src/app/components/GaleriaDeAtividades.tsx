@@ -1,4 +1,6 @@
 'use client'
+import Image from "next/image";
+
 import { FiArrowRight } from "react-icons/fi";
 import { SiArduino } from "react-icons/si";
 
@@ -30,7 +32,7 @@ export default function GaleriaDeAtividades() {
     ]
 
     return (
-        <section className="font-Poppins text-cinzaGrace flex flex-col items-center justify-center text-center">
+        <section className="font-Poppins text-cinzaGrace flex flex-col items-center justify-center text-center relative">
 
             <div className="px-40 py-16">
                 <h1 className="text-4xl pb-8 font-bold">Galeria de Atividades</h1>
@@ -55,9 +57,22 @@ export default function GaleriaDeAtividades() {
             <div className="pt-16">
                 <PrimaryButton onClick={() => window.open("http://each.uspnet.usp.br/petsi/grace/?page_id=96", "_blank")} title={"Veja todas nossas atividades"} />
             </div>
+            
+            <Image
+                    src="/x.svg"
+                    width={125}
+                    height={40}
+                    alt="background"
+                    className="opacity-60 -z-40 absolute top-0 -right-12"
+                />
 
-            <img src="/x.svg" className="opacity-60 -z-40 absolute top-0 right-0" />
-            <img src="/x.svg" className="opacity-40 -z-40 absolute bottom-0 left-0" />
+            <Image
+                    src="/x.svg"
+                    width={125}
+                    height={40}
+                    alt="background"
+                    className="opacity-40 -z-40 absolute -bottom-16 -left-12"
+                />
 
         </section>
     );
