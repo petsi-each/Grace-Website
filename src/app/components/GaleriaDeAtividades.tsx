@@ -32,6 +32,7 @@ export default function GaleriaDeAtividades() {
     ]
 
     return (
+        <div className="overflow-x-clip" aria-label="Galeria de Atividades">
         <section className="font-Poppins text-cinzaGrace flex flex-col items-center justify-center text-center relative">
 
             <div className="px-40 py-16">
@@ -75,5 +76,6 @@ export default function GaleriaDeAtividades() {
                 />
 
         </section>
+        </div>
     );
 }

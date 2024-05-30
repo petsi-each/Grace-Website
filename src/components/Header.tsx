@@ -58,7 +58,7 @@ export default function Header() {
 
             </div>
 
-            <section className={`drop-shadow w-full rounded-md z-40 p-4 lg:p-0 my-2 transition-all duration-300 max-lg:absolute max-lg:bg-brancoGrace lg:flex lg:flex-grow lg:visible lg:opacity-100 ${openMenu ? ' opacity-100 visible' : ' opacity-0 invisible'}`} >
+            <section className={`drop-shadow left-0 w-full rounded-md z-40 p-4 lg:p-0 my-2 transition-all duration-300 max-lg:absolute max-lg:bg-brancoGrace lg:flex lg:flex-grow lg:visible lg:opacity-100 ${openMenu ? ' opacity-100 visible' : ' opacity-0 invisible'}`} >
 
 
                 <nav className={`flex my-2 grow flex-col lg:flex-row lg:items-center lg:justify-center lg:my-0`}>
