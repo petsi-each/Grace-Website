@@ -45,7 +45,7 @@ export default function Header() {
             <div className="flex items-center">
 
                 <Image
-                    src="/logoHorizontal.png"
+                    src="./logoHorizontal.png"
                     width={125}
                     height={40}
                     alt="GRACE USP"

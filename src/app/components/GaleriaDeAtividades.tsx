@@ -59,7 +59,7 @@ export default function GaleriaDeAtividades() {
             </div>
             
             <Image
-                    src="/x.svg"
+                    src="./x.svg"
                     width={125}
                     height={40}
                     alt="background"
@@ -67,7 +67,7 @@ export default function GaleriaDeAtividades() {
                 />
 
             <Image
-                    src="/x.svg"
+                    src="./x.svg"
                     width={125}
                     height={40}
                     alt="background"
