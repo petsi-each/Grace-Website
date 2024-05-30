@@ -17,10 +17,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="pt">
       
       <head>
-        <link rel="icon" href="/icon.png" sizes="any" />
+        <link rel="icon" href="./icon.png" sizes="any" />
       </head>
 
       <body className={`px-8 ${inter.className}`}>
