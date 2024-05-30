@@ -1,5 +1,4 @@
 'use client'
-import Image from "next/image";
 
 import { FiArrowRight } from "react-icons/fi";
 import { SiArduino } from "react-icons/si";
@@ -63,7 +62,7 @@ export default function GaleriaDeAtividades() {
                     src={"/x.svg"}
                     width={125}
                     height={40}
-                    alt="background"
+                    alt=""
                     className="opacity-60 -z-40 absolute top-0 -right-12"
                 />
 
@@ -71,7 +70,7 @@ export default function GaleriaDeAtividades() {
                     src={"/x.svg"}
                     width={125}
                     height={40}
-                    alt="background"
+                    alt=""
                     className="opacity-40 -z-40 absolute -bottom-16 -left-12"
                 />
 
