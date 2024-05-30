@@ -24,7 +24,6 @@ export default function RootLayout({
       </head>
 
       <body className={`px-8 ${inter.className}`}>
-      <p>Teste em prod :( {process.env.NODE_ENV}</p>
         <Header />
         {children}
 
