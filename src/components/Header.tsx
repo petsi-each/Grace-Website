@@ -6,6 +6,7 @@ import { useState } from "react";
 import PrimaryButton from "./PrimaryButton";
 import { FiMenu } from "react-icons/fi";
 import { FiX } from "react-icons/fi";
+import ImageG from './ImageG';
 
 
 export default function Header() {
@@ -44,13 +45,13 @@ export default function Header() {
 
             <div className="flex items-center">
 
-                <Image
-                    src={"/auth/logoHorizontal.png"}
+                <ImageG
+                    src="/logoHorizontal.png" 
+                    alt="GRACE USP"
                     width={125}
                     height={40}
-                    alt="GRACE USP"
                 />
-
+                  
                 <button className="text-cinzaGrace w-full flex justify-end lg:hidden" onClick={() => setOpenMenu((prevValue) => !prevValue)}>
                     {openMenu ? <FiX size={30} /> : <FiMenu size={30} />}
                 </button>

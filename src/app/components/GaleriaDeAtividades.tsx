@@ -5,6 +5,7 @@ import { FiArrowRight } from "react-icons/fi";
 import { SiArduino } from "react-icons/si";
 
 import PrimaryButton from "@/components/PrimaryButton";
+import ImageG from "@/components/ImageG";
 
 export default function GaleriaDeAtividades() {
     const articles = [
@@ -58,7 +59,7 @@ export default function GaleriaDeAtividades() {
                 <PrimaryButton onClick={() => window.open("http://each.uspnet.usp.br/petsi/grace/?page_id=96", "_blank")} title={"Veja todas nossas atividades"} />
             </div>
             
-            <Image
+            <ImageG
                     src={"/x.svg"}
                     width={125}
                     height={40}
@@ -66,7 +67,7 @@ export default function GaleriaDeAtividades() {
                     className="opacity-60 -z-40 absolute top-0 -right-12"
                 />
 
-            <Image
+            <ImageG
                     src={"/x.svg"}
                     width={125}
                     height={40}
