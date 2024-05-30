@@ -1,5 +1,5 @@
 'use client'
-
+import Image from 'next/image'
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 
@@ -44,7 +44,12 @@ export default function Header() {
 
             <div className="flex items-center">
 
-                <img src="./logoHorizontal.png" alt="Logo do GRACE" width={125} />
+                <Image
+                    src="/logoHorizontal.png"
+                    width={125}
+                    height={40}
+                    alt="GRACE USP"
+                />
 
                 <button className="text-cinzaGrace w-full flex justify-end lg:hidden" onClick={() => setOpenMenu((prevValue) => !prevValue)}>
                     {openMenu ? <FiX size={30} /> : <FiMenu size={30} />}
