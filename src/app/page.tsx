@@ -1,6 +1,6 @@
 
 
-import Oqueeograce from "@/components/home/Oqueeograce";
+import Oqueeograce from "@/app/components/home/Oqueeograce";
 
 export default function Home() {
   return (

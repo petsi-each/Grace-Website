@@ -1,5 +1,5 @@
 
-import Balao from "./components/Balao";
+import Balao from "./Balao";
 
 export default function Oqueeograce() {
     const cards = [
