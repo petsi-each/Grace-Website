@@ -1,3 +1,4 @@
+import ImageG from "@/components/ImageG";
 
 interface BalaoObjeto {
     imagem: string,
@@ -17,7 +18,7 @@ export default function Balao(props: BaloesInt) {
                 props.lista.map((balao) => (
                     <div>
                         <article className="flex flex-col p-6 w-72 h-72 bg-brancoGrace rounded-3xl shadow-md"> {/*queria ter usado o justify center aqui mas nao deu certo com a imagem! */}
-                            <img className="w-60 h-40 rounded-3xl" src={balao.imagem} alt={balao.alternativo} />
+                            <ImageG className="w-60 h-40 rounded-3xl" src={balao.imagem} alt={balao.alternativo} />
                             <h2 className="font-Poppins font-bold text-vermelhoGrace text-lg flex justify-center m-2">{balao.titulo}</h2>
                             <p className="font-Poppins text-center text-black text-xs">{balao.descricao}</p>
                         </article>
