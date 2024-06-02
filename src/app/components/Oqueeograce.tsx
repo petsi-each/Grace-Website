@@ -2,7 +2,8 @@
 import Balao from "./Balao";
 
 export default function Oqueeograce() {
-    const cards = [
+
+    const baloes = [
         {
             imagem:"/home/oficinasTecnicas.jpg",
             alternativo: "Estudantes em computadores",
@@ -39,8 +40,7 @@ export default function Oqueeograce() {
             titulo:"Visitando às escolas",
             descricao:"Levando atividades para escolas da região da Zona Leste de SP"
         }
-    ]
-
+    ];
 
     return (
         <div className="my-16">
@@ -48,15 +48,7 @@ export default function Oqueeograce() {
             <section className="bg-gradient-to-b from-vermelhoGrace to-[#feb581] py-4 px-32 flex flex-col items-center"> {/*preferi sem justify-center*/}
                 <h1 className="mb-12 font-Poppins font-bold text-brancoGrace text-4xl">O que fazemos?</h1>
                 <p className="font-Poppins text-center text-brancoGrace text-lg">O GRACE é um projeto de extensão do curso de Sistemas de Informação (Escola de Artes, CIências e Humanidades) da Universidade de São Paulo. Nosso objetivo é <b>incentivar</b> e <b>manter</b> meninas na área da computação, a fim de diminuir a disparidade de gênero, por meio de atividades práticas e tecnológicas!</p>
-                <div className="mt-16 grid grid-cols-3 gap-x-5 gap-y-4"> {/*não me preocupei com responsividade mas PRECISAMOS*/}
-                    {
-                    cards.map((card)=>(
-                        <div>
-                            <Balao imagem={card.imagem} alternativo={card.alternativo} titulo={card.titulo} descricao={card.descricao}/>
-                        </div>
-                    ))
-                    }                    
-                </div>
+                <Balao lista={baloes}/> 
             </section>
             <img src="/home/oqueeograceBGB.svg" className="-mt-2 w-screen" />
         </div>
