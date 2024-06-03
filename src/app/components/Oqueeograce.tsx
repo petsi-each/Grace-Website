@@ -1,5 +1,5 @@
 import ImageG from "@/components/ImageG";
-import Balao from "./Balao";
+import BalaoGrid from "./BalaoGrid";
 
 export default function Oqueeograce() {
 
@@ -45,10 +45,10 @@ export default function Oqueeograce() {
     return (
         <div className="my-16">
             <ImageG className="-mb-2 w-screen" src="/home/oqueeograceBGT.svg" alt=" " width="2" height="2"/> 
-            <section className="bg-gradient-to-b from-vermelhoGrace to-[#feb581] py-4 px-32 flex flex-col items-center"> 
+            <section className="bg-gradient-to-b from-vermelhoGrace to-[#feb581] py-4 px-32 flex flex-col items-center"> TODO: (bug) A onda superior está sendo reinderizada com um pequeno espaço à esquerda pelo Firefox
                 <h1 className="mb-12 font-Poppins font-bold text-brancoGrace text-4xl">O que fazemos?</h1>
                 <p className="font-Poppins text-center text-brancoGrace text-lg">O GRACE é um projeto de extensão do curso de Sistemas de Informação (Escola de Artes, CIências e Humanidades) da Universidade de São Paulo. Nosso objetivo é <b>incentivar</b> e <b>manter</b> meninas na área da computação, a fim de diminuir a disparidade de gênero, por meio de atividades práticas e tecnológicas!</p>
-                <Balao lista={baloes}/> 
+                <BalaoGrid lista={baloes}/> 
             </section>
             <ImageG className="-mb-2 w-screen" src="/home/oqueeograceBGB.svg" alt=" " width="2" height="2"/>
         </div>

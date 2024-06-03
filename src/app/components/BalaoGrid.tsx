@@ -1,19 +1,19 @@
 import ImageG from "@/components/ImageG";
 
-interface BalaoObjeto {
+interface Balao {
     imagem: string,
     alternativo: string,
     titulo: string,
     descricao: string
 }
 
-interface BaloesInt {
-    lista: BalaoObjeto[],
+interface BalaoList {
+    lista: Balao[]
 }
 
-export default function Balao(props: BaloesInt) {
+export default function BalaoGrid(props: BalaoList) {
     return (
-        <div className="mt-16 grid grid-cols-3 gap-x-5 gap-y-4"> TODO: ajustes de responsividade precisam ser adicionados
+        <div className="mt-16 grid grid-cols-3 gap-x-5 gap-y-4"> 
             {
                 props.lista.map((balao) => (
                     <div>
@@ -25,6 +25,7 @@ export default function Balao(props: BaloesInt) {
                     </div>
                 ))
             }
+        TODO: ajustes de responsividade precisam ser adicionados
         </div>
     );
 }
