@@ -50,7 +50,7 @@ export default function Oqueeograce() {
                 <p className="font-Poppins text-center text-brancoGrace text-lg">O GRACE é um projeto de extensão do curso de Sistemas de Informação (Escola de Artes, CIências e Humanidades) da Universidade de São Paulo. Nosso objetivo é <b>incentivar</b> e <b>manter</b> meninas na área da computação, a fim de diminuir a disparidade de gênero, por meio de atividades práticas e tecnológicas!</p>
                 <BalaoGrid lista={baloes}/> 
             </section>
-            <ImageG className="-mb-2 w-screen" src="/home/oqueeograceBGB.svg" alt=" " width="2" height="2"/>
+            <ImageG className="-mt-2 w-screen" src="/home/oqueeograceBGB.svg" alt=" " width="2" height="2"/>
         </div>
     );
 }
