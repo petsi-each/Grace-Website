@@ -3,7 +3,7 @@
 import LeftButton from "./LeftButton";
 import Image from "next/image";
 import heroImage from "../../../public/images/hero-image.png";
-import SecondaryButton from "../SecondaryButton";
+import SecondaryButton from "../../../components/SecondaryButton";
 
 export default function Hero(){
     return (
