@@ -8,7 +8,8 @@ import Header from "@/components/Header";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "GRACE USP"
+  title: "GRACE USP",
+  description: 'O GRACE USP é um grupo de extensão cujo objetivo é incentivar a participação feminina na área de tecnologia por meio de atividades para meninas do fundamental à graduação. Aprenda conosco!',
 };
 
 export default function RootLayout({
@@ -17,9 +18,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`px-8 ${inter.className}`}>
+    <html lang="pt">
+      
+      <head>
+        <link rel="icon" href="./icon.png" sizes="any" />
+      </head>
 
+      <body className={`px-8 ${inter.className}`}>
         <Header />
         {children}
         <Footer />
