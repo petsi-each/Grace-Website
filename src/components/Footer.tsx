@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="bg-transparent position:relative flex flex-col justify-center items-center w-full z-index: -1 before:content-[''] before:absolute before:w-full before:h-[15rem] before:bg-[url('/waves.svg')] before:bg-no-repeat before:bg-top">
+    <footer className="bg-transparent position:relative flex flex-col zIndex:1 justify-center items-center w-full z-index: -1 before:content-[''] before:absolute before:top-200 before:w-full before:h-[15rem] before:bg-[url('/waves.svg')] before:bg-no-repeat before:bg-top">
 
 
 
