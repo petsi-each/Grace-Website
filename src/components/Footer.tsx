@@ -1,10 +1,10 @@
 export default function Footer() {
   return (
-    <footer className="bg-transparent position:relative flex flex-col zIndex:1 justify-center items-center w-full z-index: -1 before:content-[''] before:absolute before:top-200 before:w-full before:h-[15rem] before:bg-[url('/waves.svg')] before:bg-no-repeat before:bg-top">
+    <footer className="bg-transparent position:relative flex flex-col justify-center items-center w-full before:content-[''] before:absolute before:top-200 before:w-full before:h-[15rem] before:bg-[url('/waves.svg')] before:bg-no-repeat before:bg-top before:-z-10">
 
 
 
-      <p>Grace</p>
+      <p className="text-brancoGrace font-Poppins">Grace</p>
 
       <ul className="flex ">
         <a href="https://www.instagram.com/graceusp/?hl=pt-br">
@@ -15,6 +15,7 @@ export default function Footer() {
             viewBox="0 0 44 44"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
+            className="m-2"
           >
             <circle cx="22" cy="22" r="22" fill="#FEFDFD" />
             <path
@@ -29,6 +30,7 @@ export default function Footer() {
           viewBox="0 0 44 44"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
+          className="m-2"
         >
           <circle cx="22" cy="22" r="22" fill="#FEFDFD" />
           <path
@@ -38,12 +40,19 @@ export default function Footer() {
       </ul>
 
       <ul className="flex">
-        <li>USP</li>
-        <li>Meninas digitais</li>
-        <li>PET</li>
+        <img src="Rodape.png"></img>
       </ul>
 
-      <p>Desenvolvido por PET-SI 2024</p>
+      <p className="text-brancoGrace">Desenvolvido por PET-SI 2024</p>
     </footer>
   );
 }
+/*Falta fazer: 
+Trocar logos do final por SVG - Ta muito ruim a qualidade do PNG
+Trocar o texto escrito Grace pela logo em SVG
+Terminar de alinhar na parte de baixo
+"Descer o footer"
+Linkar email do Grace
+Tirar os SVGs do documento principal
+*/
+
