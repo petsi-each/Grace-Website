@@ -59,7 +59,7 @@ function MediaCard(props: MediaCardProps) {
 
     return (
         <div className="flex items-center text-sm bg-vermelhoGrace rounded-xl">
-            <img src={props.src} alt={props.alt} />
+            <img className="w-1/2 h-auto max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl" src={props.src} alt={props.alt} />
             <div className="flex flex-col justify-items text-brancoGrace h-full w-full py-4 pr-4">
                 <h1 className="font-bold">{props.title}</h1>
                 <h2 className="w-5/6">{truncatedText}</h2>
