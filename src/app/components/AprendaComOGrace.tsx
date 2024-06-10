@@ -53,8 +53,6 @@ function MediaCard(props: MediaCardProps) {
     }
 
     const wordLimit = getWordLimit(width)
-    console.log("width: ", width)
-    console.log("word limit: ", wordLimit)
     const truncatedText = truncateText(props.sneak_peek_text, wordLimit)
 
     return (
@@ -100,7 +98,7 @@ function Topic(props: TopicProps) {
 
 export default function AprendaComOGrace() {
     return (
-        <div className="grid grid-cols-2 gap-4">
+        <section className="grid grid-cols-2 gap-4">
             <div className="font-Poppins">
                 <h1 className="text-4xl text-cinzaGrace font-bold mb-14">Aprenda com o <b className="text-vermelhoGrace font-bold">GRACE</b></h1>
                 <Topic 
@@ -141,6 +139,6 @@ export default function AprendaComOGrace() {
             <div className="flex justify-center">
                 <img src="/home/grace_hopper.png" className="object-cover" />
             </div>
-        </div>
+        </section>
     )
 }
