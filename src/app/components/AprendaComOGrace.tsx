@@ -98,7 +98,7 @@ function Topic(props: TopicProps) {
 
 export default function AprendaComOGrace() {
     return (
-        <section className="grid grid-cols-2 gap-4">
+        <section className="grid grid-cols-2 gap-4 p-8">
             <div className="font-Poppins">
                 <h1 className="text-4xl text-cinzaGrace font-bold mb-14">Aprenda com o <b className="text-vermelhoGrace font-bold">GRACE</b></h1>
                 <Topic 
