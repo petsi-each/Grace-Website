@@ -83,7 +83,7 @@ interface TopicProps {
 function Topic(props: TopicProps) {
     return (
         <div className="mb-12">
-            <h2 className="font-bold text-2xl text-cinzaGrace mb-8">{props.title}</h2>
+            <h2 className="font-bold text-2xl text-cinzaGrace mb-4">{props.title}</h2>
             <p className="text-lg mb-8">{props.desc}</p>
             {/* TODO: Trocar pelo componente*/}
             <a
