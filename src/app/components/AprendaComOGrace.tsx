@@ -136,7 +136,7 @@ export default function AprendaComOGrace() {
                     }
                 />
             </div>
-            <div className="flex justify-center">
+            <div className="hidden sm:block">
                 <img src="/home/grace_hopper.png" className="object-cover" />
             </div>
         </section>
