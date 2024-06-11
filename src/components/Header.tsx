@@ -52,7 +52,7 @@ export default function Header() {
                     height={40}
                 />
                   
-                <button className="text-cinzaGrace w-full flex justify-end lg:hidden" onClick={() => setOpenMenu((prevValue) => !prevValue)}>
+                <button id="navButton" title="Menu de navegação" className="text-cinzaGrace w-full flex justify-end lg:hidden" onClick={() => setOpenMenu((prevValue) => !prevValue)}>
                     {openMenu ? <FiX size={30} /> : <FiMenu size={30} />}
                 </button>
 
