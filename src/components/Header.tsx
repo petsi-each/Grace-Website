@@ -46,7 +46,7 @@ export default function Header() {
             <div className="flex items-center">
 
                 <ImageG
-                    src="/logoHorizontal-sm.png" 
+                    src="/logoHorizontal.svg" 
                     alt="GRACE USP"
                     width={125}
                     height={40}
