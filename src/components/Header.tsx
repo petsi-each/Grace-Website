@@ -48,8 +48,8 @@ export default function Header() {
                 <ImageG
                     src="/logoHorizontal-sm.png" 
                     alt="GRACE USP"
-                    width={300}
-                    height={103}
+                    width={125}
+                    height={40}
                 />
                   
                 <button id="navButton" title="Menu de navegação" className="text-cinzaGrace w-full flex justify-end lg:hidden" onClick={() => setOpenMenu((prevValue) => !prevValue)}>
