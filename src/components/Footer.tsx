@@ -1,10 +1,10 @@
 export default function Footer() {
   return (
-    <footer className="bg-transparent position:relative flex flex-col justify-center items-center w-full before:content-[''] before:absolute before:top-200 before:w-full before:h-[15rem] before:bg-[url('/waves.svg')] before:bg-no-repeat before:bg-top before:-z-10">
+    <footer className="bg-transparent position:relative flex flex-col justify-center items-center w-full before:content-[''] before:absolute before:w-full before:h-[14.7rem] before:bg-[url('/waves.svg')] before:bg-no-repeat before:bg-top before:-z-10">
+      
 
 
-
-      <p className="text-brancoGrace font-Poppins">Grace</p>
+      <img src = "logoGrace.svg" alt=" "/>
 
       <ul className="flex ">
         <a href="https://www.instagram.com/graceusp/?hl=pt-br">
@@ -23,6 +23,7 @@ export default function Footer() {
               fill="#E7442B" />
           </svg>
         </a>
+        <a href="gracepetsi@gmail.com">
         <svg
           id="botaoEmail"
           width="44"
@@ -37,22 +38,19 @@ export default function Footer() {
             d="M30.6665 13.3335C31.2131 13.3333 31.7396 13.5398 32.1404 13.9115C32.5412 14.2831 32.7868 14.7926 32.8278 15.3377L32.8332 15.5002V28.5002C32.8333 29.0468 32.6269 29.5733 32.2552 29.9741C31.8835 30.3749 31.3741 30.6204 30.829 30.6614L30.6665 30.6668H13.3332C12.7865 30.667 12.2601 30.4606 11.8592 30.0889C11.4584 29.7172 11.2129 29.2077 11.1719 28.6627L11.1665 28.5002V15.5002C11.1663 14.9535 11.3728 14.427 11.7445 14.0262C12.1161 13.6254 12.6256 13.3799 13.1707 13.3389L13.3332 13.3335H30.6665ZM30.6665 17.032L23.1482 24.5503C22.8435 24.8546 22.4305 25.0256 21.9998 25.0256C21.5692 25.0256 21.1562 24.8546 20.8515 24.5503L13.3332 17.032V28.5002H30.6665V17.032ZM29.1347 15.5002H14.865L21.9998 22.635L29.1347 15.5002Z"
             fill="#E7442B" />
         </svg>
+      </a>
       </ul>
+
+   
 
       <ul className="flex">
-        <img src="Rodape.png"></img>
+      <img src = "rodapeump.svg" alt=" "/>
       </ul>
-
-      <p className="text-brancoGrace">Desenvolvido por PET-SI 2024</p>
+      
+      <p className="text-brancoGrace" style={{ justifyContent:'flex-end', marginTop:20}}>
+         Desenvolvido por PET-SI 2024
+    </p>
     </footer>
   );
 }
-/*Falta fazer: 
-Trocar logos do final por SVG - Ta muito ruim a qualidade do PNG
-Trocar o texto escrito Grace pela logo em SVG
-Terminar de alinhar na parte de baixo
-"Descer o footer"
-Linkar email do Grace
-Tirar os SVGs do documento principal
-*/
 
