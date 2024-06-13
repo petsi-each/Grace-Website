@@ -1,13 +1,12 @@
 'use client'
 
 import LeftButton from "./LeftButton";
-import Image from "next/image";
-import heroImage from "../../../../public/images/hero-image.png";
+import ImageG from "@/components/ImageG";
+/*import heroImage from "/images/hero-image.png";*/
 import SecondaryButton from "../../../components/SecondaryButton";
-import patternXCinza from "../../../../public/images/Pattern x - cinza.png";
-import patternXBranco from "../../../../public/images/pattern x - branco.png";
-import patternXLaranja from "../../../../public/images/pattern x - laranja.png";
-
+/*import patternXCinza from "/images/pattern-x-cinza.png";
+import patternXBranco from "/images/pattern-x-branco.png";
+import patternXLaranja from "/images/pattern-x-laranja.png";*/
 
 export default function Hero(){
     return (
@@ -43,7 +42,7 @@ export default function Hero(){
                         </span>
 
                         <div>
-                        <Image src={patternXCinza} alt="Imagem decorativa de fundo"/>
+                        <ImageG src="/home/pattern-x-cinza.png" height={0} width={0} alt="Imagem decorativa de fundo"/>
                         </div>
                     </span>
 
@@ -51,14 +50,14 @@ export default function Hero(){
 
                 {/* Imagem da mayu */}
                 <div className="inline col-span-3 max-w-fit static">
-                    <Image src={heroImage} alt="Menina sorrindo testando um circuito de Arduino"/>
+                    <ImageG src="/home/hero-image.png" height={0} width={0} alt="Menina sorrindo testando um circuito de Arduino"/>
 
                     <div className="absolute">
-                        <Image src={patternXBranco} alt="Imagem decorativa de fundo"/>
+                        <ImageG className="w-10 h-10" src="/home/pattern-x-branco.png" height={0} width={0} alt="Imagem decorativa de fundo"/>
                     </div>
 
                     <div className="absolute">
-                        <Image src={patternXLaranja} alt="Imagem decorativa de fundo"/>
+                        <ImageG src="/home/pattern-x-laranja.png" height={0} width={0} alt="Imagem decorativa de fundo"/>
                     </div>
                 </div>
                 
