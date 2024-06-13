@@ -1,11 +1,12 @@
 'use client'
-
+import Image from 'next/image'
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 
 import PrimaryButton from "./PrimaryButton";
 import { FiMenu } from "react-icons/fi";
 import { FiX } from "react-icons/fi";
+import ImageG from './ImageG';
 
 
 export default function Header() {
@@ -44,15 +45,20 @@ export default function Header() {
 
             <div className="flex items-center">
 
-                <img src="./logoHorizontal.png" alt="Logo do GRACE" width={125} />
-
-                <button className="text-cinzaGrace w-full flex justify-end lg:hidden" onClick={() => setOpenMenu((prevValue) => !prevValue)}>
+                <ImageG
+                    src="/logoHorizontal.svg" 
+                    alt="GRACE USP"
+                    width={125}
+                    height={40}
+                />
+                  
+                <button id="navButton" title="Menu de navegação" className="text-cinzaGrace w-full flex justify-end lg:hidden" onClick={() => setOpenMenu((prevValue) => !prevValue)}>
                     {openMenu ? <FiX size={30} /> : <FiMenu size={30} />}
                 </button>
 
             </div>
 
-            <section className={`drop-shadow w-full rounded-md p-4 lg:p-0 my-2 transition-all duration-300 max-lg:absolute max-lg:bg-brancoGrace lg:flex lg:flex-grow lg:visible lg:opacity-100 ${openMenu ? ' opacity-100 visible' : ' opacity-0 invisible'}`} >
+            <section className={`drop-shadow left-0 w-full rounded-md z-40 p-4 lg:p-0 my-2 transition-all duration-300 max-lg:absolute max-lg:bg-brancoGrace lg:flex lg:flex-grow lg:visible lg:opacity-100 ${openMenu ? ' opacity-100 visible' : ' opacity-0 invisible'}`} >
 
 
                 <nav className={`flex my-2 grow flex-col lg:flex-row lg:items-center lg:justify-center lg:my-0`}>

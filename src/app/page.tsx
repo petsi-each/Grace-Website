@@ -1,4 +1,5 @@
 import Hero from "@/app/components/hero-section/Hero";
+import GaleriaDeAtividades from "./components/GaleriaDeAtividades";
 
 export default function Home() {
   return (
@@ -6,6 +7,7 @@ export default function Home() {
       {/* Adicionar componentes da landingPage aqui aqui */}
 
       <Hero />
+    <GaleriaDeAtividades />
     </main>
   );
 }
