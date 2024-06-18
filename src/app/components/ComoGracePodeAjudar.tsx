@@ -1,8 +1,10 @@
 import React from "react";
-import TeacherIcon from "./TeacherIcon";
-import SchoolIcon from "./SchoolIcon";
-import AssignmentIcon from "./AssignmentIcon";
-import ApartmentIcon from "./ApartmentIcon";
+
+import { IoSchoolSharp } from "react-icons/io5";
+import { IoEaselSharp } from "react-icons/io5";
+import { IoBusinessSharp } from "react-icons/io5";
+import { IoBookSharp } from "react-icons/io5";
+
 
 export default function ComoGracePodeAjudar() {
     const emailGrace = "pet-si-each@usp.br";
@@ -11,25 +13,25 @@ export default function ComoGracePodeAjudar() {
         {
             title: "Professores e outros grupos",
             description: "Veja nossa galeria de atividades para replicá-las com seu público!",
-            icon: <TeacherIcon />,
+            icon: <IoEaselSharp size={34} />,
             color: "bg-vermelhoGrace"
         },
         {
             title: "Escolas",
             description: "Entre em contato para organizar uma atividade com suas alunas",
-            icon: <SchoolIcon />,
+            icon: <IoSchoolSharp size={34}/>,
             color: "bg-laranjaGrace"
         },
         {
             title: "Estudantes de graduação",
             description: "Vire uma amiga do GRACE, junte-se à nossa comunidade e nos ajude a organizar atividades!",
-            icon: <AssignmentIcon />,
+            icon: <IoBookSharp size={34}/>,
             color: "bg-pessegoGrace"
         },
         {
             title: "Empresas",
             description: "Entre em contato para organizarmos uma atividade para as alunas de graduação da USP!",
-            icon: <ApartmentIcon />,
+            icon: <IoBusinessSharp size={34}/>,
             color: "bg-vermelhoGrace"
         },
     ]
@@ -46,7 +48,7 @@ export default function ComoGracePodeAjudar() {
                 {
                     options.map((option, idx) => (
                         <div className="flex items-center mb-4 space-x-4" key={idx}>
-                            <span className={`${option.color} drop-shadow-lg rounded-full h-20 w-20 flex items-center justify-center`}>{option.icon}</span>
+                            <span className={`${option.color} drop-shadow-lg rounded-full h-20 w-20 flex items-center justify-center text-white`}>{option.icon}</span>
                             <span>
                                 <h3 className="font-bold text-2xl">{option.title}</h3>
                                 <p>{option.description}</p>
