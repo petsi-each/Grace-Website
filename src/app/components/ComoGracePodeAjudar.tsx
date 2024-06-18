@@ -39,7 +39,7 @@ export default function ComoGracePodeAjudar() {
     ]
 
     return (
-        <section className="grid grid-cols-2 gap-8 font-Poppins text-cinzaGrace">
+        <section className="grid grid-cols-2 gap-8 font-Poppins text-cinzaGrace items-center p-32">
             <div className="flex flex-col items-center justify-center">
                 <ImageG className="rounded-md z-10 -ml-36" src="/home/grace-ajuda-1.png" width={395} height={526} alt="Membra do GRACE fazendo high five com uma criança" />
                 <ImageG className="rounded-md z-20 -mt-48 -mr-48" src="/home/grace-ajuda-2.png" width={296} height={303} alt="Na frente, membra do GRACE monitorando duas alunas em atividade. Atrás, outra membra auxiliando outras alunas" />
