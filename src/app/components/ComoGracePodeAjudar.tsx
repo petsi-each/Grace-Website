@@ -4,6 +4,7 @@ import { IoSchoolSharp } from "react-icons/io5";
 import { IoEaselSharp } from "react-icons/io5";
 import { IoBusinessSharp } from "react-icons/io5";
 import { IoBookSharp } from "react-icons/io5";
+import { FiArrowRight } from "react-icons/fi";
 
 
 export default function ComoGracePodeAjudar() {
@@ -58,7 +59,8 @@ export default function ComoGracePodeAjudar() {
                 }
                 </div>
 
-                <a className="mt-12" href={`mailto:${emailGrace}`}>Entre em contato&nbsp;➡</a>
+                {/* TODO: TROCAR PELO COMPONENTE DE BOTÃO SECUNDÁRIO */}
+                <a className="mt-12 flex items-center justify-end text-vermelhoGrace font-medium rounded-lg text-center drop-shadow py-2 px-6 transition-all hover:drop-shadow-xl transition-all duration-500" href={`mailto:${emailGrace}`}>Entre em contato <FiArrowRight size={16}/></a>
             </div>
         </section>
     );
