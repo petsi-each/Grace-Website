@@ -39,20 +39,19 @@ export default function ComoGracePodeAjudar() {
     ]
 
     return (
-        <section className="grid grid-cols-2 gap-8 font-Poppins text-cinzaGrace items-center p-32">
-            <div className="flex flex-col items-center justify-center">
-                <ImageG className="rounded-md z-10 -ml-36" src="/home/grace-ajuda-1.png" width={395} height={526} alt="Membra do GRACE fazendo high five com uma criança" />
-                <ImageG className="rounded-md z-20 -mt-48 -mr-48" src="/home/grace-ajuda-2.png" width={296} height={303} alt="Na frente, membra do GRACE monitorando duas alunas em atividade. Atrás, outra membra auxiliando outras alunas" />
+        <section className="grid grid-cols-1 lg:grid-cols-2 gap-8 font-Poppins text-cinzaGrace items-center p-8 lg:p-32">
+            <div className="flex items-center justify-center mb-18 md:mb-0">
+                <ImageG src="/home/grace-ajuda.png" width={489} height={643} alt="Membras do GRACE interagindo com crianças nas atividades" />
             </div>
             <div>
-                <h2 className="text-4xl font-bold">Como o <span className="text-vermelhoGrace">GRACE</span> pode me ajudar?</h2>
-                <div className="space-y-8 my-8">
+                <h2 className="text-4xl font-bold text-center md:text-left mb-18 md:mb-0">Como o <span className="text-vermelhoGrace">GRACE</span> pode me ajudar?</h2>
+                <div className="space-y-16 my-8 md:space-y-8">
                 {
                     options.map((option, idx) => (
-                        <article className="flex items-center space-x-4" key={idx}>
-                            <span className={`${option.color} drop-shadow-lg rounded-full h-min w-min min-h-16 min-w-16 flex items-center justify-center text-white`}>{option.icon}</span>
+                        <article className="flex  flex-col items-center text-center md:flex-row md:space-x-4 md:text-left" key={idx}>
+                            <span className={`${option.color} drop-shadow-lg rounded-full h-min mb-4 w-min min-h-16 min-w-16 flex items-center justify-center text-white md:mb-0`}>{option.icon}</span>
                             <span>
-                                <h3 className="font-bold text-2xl">{option.title}</h3>
+                                <h3 className="font-bold text-2xl mb-2 md:mb-0">{option.title}</h3>
                                 <p>{option.description}</p>
                             </span>
                         </article>
@@ -61,7 +60,7 @@ export default function ComoGracePodeAjudar() {
                 </div>
 
                 {/* TODO: TROCAR PELO COMPONENTE DE BOTÃO SECUNDÁRIO */}
-                <a className="mt-12 flex items-center justify-end text-vermelhoGrace font-medium rounded-lg text-center drop-shadow py-2 px-6 transition-all hover:drop-shadow-xl transition-all duration-500" href={`mailto:${emailGrace}`}>Entre em contato <FiArrowRight size={16}/></a>
+                <a className="mt-12 flex items-center justify-center text-vermelhoGrace font-medium rounded-lg text-center drop-shadow py-2 px-6 transition-all hover:drop-shadow-xl transition-all duration-500 md:justify-end" href={`mailto:${emailGrace}`}>Entre em contato <FiArrowRight size={16}/></a>
             </div>
         </section>
     );
