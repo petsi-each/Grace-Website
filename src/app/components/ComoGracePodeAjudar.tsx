@@ -8,7 +8,7 @@ export default function ComoGracePodeAjudar() {
     const emailGrace = "pet-si-each@usp.br";
 
     return (
-        <section>
+        <section >
             <div>
                 <img src="./home/grace-ajuda-1.png" alt="Membra do GRACE fazendo high five com uma criança" />
                 <img src="./home/grace-ajuda-2.png" alt="Na frente, membra do GRACE monitorando duas alunas em atividade. Atrás, outra membra auxiliando outras alunas" />
