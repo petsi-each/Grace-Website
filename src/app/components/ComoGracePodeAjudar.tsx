@@ -43,22 +43,22 @@ export default function ComoGracePodeAjudar() {
                 {/* <img src="./home/grace-ajuda-2.png" alt="Na frente, membra do GRACE monitorando duas alunas em atividade. Atrás, outra membra auxiliando outras alunas" /> */}
             </div>
             <div>
-                <h2 className="text-4xl font-bold ">Como o <span className="text-vermelhoGrace">GRACE</span> pode me ajudar?</h2>
-
+                <h2 className="text-4xl font-bold">Como o <span className="text-vermelhoGrace">GRACE</span> pode me ajudar?</h2>
+                <div className="space-y-8 my-8">
                 {
                     options.map((option, idx) => (
-                        <div className="flex items-center mb-4 space-x-4" key={idx}>
-                            <span className={`${option.color} drop-shadow-lg rounded-full h-20 w-20 flex items-center justify-center text-white`}>{option.icon}</span>
+                        <article className="flex items-center space-x-4" key={idx}>
+                            <span className={`${option.color} drop-shadow-lg rounded-full h-min w-min min-h-16 min-w-16 flex items-center justify-center text-white`}>{option.icon}</span>
                             <span>
                                 <h3 className="font-bold text-2xl">{option.title}</h3>
                                 <p>{option.description}</p>
                             </span>
-                        </div>
+                        </article>
                     ))
                 }
+                </div>
 
-
-                <a href={`mailto:${emailGrace}`}>Entre em contato&nbsp;➡</a>
+                <a className="mt-12" href={`mailto:${emailGrace}`}>Entre em contato&nbsp;➡</a>
             </div>
         </section>
     );
