@@ -8,13 +8,13 @@ export default function ComoGracePodeAjudar() {
     const emailGrace = "pet-si-each@usp.br";
 
     return (
-        <section >
-            <div>
-                <img src="./home/grace-ajuda-1.png" alt="Membra do GRACE fazendo high five com uma criança" />
-                <img src="./home/grace-ajuda-2.png" alt="Na frente, membra do GRACE monitorando duas alunas em atividade. Atrás, outra membra auxiliando outras alunas" />
+        <section className="grid grid-cols-2 gap-8">
+            <div className="bg-green-500">
+                {/* <img src="./home/grace-ajuda-1.png" alt="Membra do GRACE fazendo high five com uma criança" /> */}
+                {/* <img src="./home/grace-ajuda-2.png" alt="Na frente, membra do GRACE monitorando duas alunas em atividade. Atrás, outra membra auxiliando outras alunas" /> */}
             </div>
             <div>
-                <h2>Como o <b>GRACE</b> pode me ajudar</h2>
+                <h2 className="font-Poppins text-4xl font-bold text-cinzaGrace">Como o <span className="text-vermelhoGrace">GRACE</span> pode me ajudar?</h2>
                 <div>
                     <span><TeacherIcon /></span>
                     <span>
