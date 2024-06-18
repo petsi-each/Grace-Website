@@ -5,6 +5,7 @@ import { IoEaselSharp } from "react-icons/io5";
 import { IoBusinessSharp } from "react-icons/io5";
 import { IoBookSharp } from "react-icons/io5";
 import { FiArrowRight } from "react-icons/fi";
+import ImageG from "@/components/ImageG";
 
 
 export default function ComoGracePodeAjudar() {
@@ -39,9 +40,9 @@ export default function ComoGracePodeAjudar() {
 
     return (
         <section className="grid grid-cols-2 gap-8 font-Poppins text-cinzaGrace">
-            <div className="bg-green-500">
-                {/* <img src="./home/grace-ajuda-1.png" alt="Membra do GRACE fazendo high five com uma criança" /> */}
-                {/* <img src="./home/grace-ajuda-2.png" alt="Na frente, membra do GRACE monitorando duas alunas em atividade. Atrás, outra membra auxiliando outras alunas" /> */}
+            <div className="flex flex-col items-center justify-center">
+                <ImageG className="rounded-md z-10 -ml-36" src="/home/grace-ajuda-1.png" width={395} height={526} alt="Membra do GRACE fazendo high five com uma criança" />
+                <ImageG className="rounded-md z-20 -mt-48 -mr-48" src="/home/grace-ajuda-2.png" width={296} height={303} alt="Na frente, membra do GRACE monitorando duas alunas em atividade. Atrás, outra membra auxiliando outras alunas" />
             </div>
             <div>
                 <h2 className="text-4xl font-bold">Como o <span className="text-vermelhoGrace">GRACE</span> pode me ajudar?</h2>
