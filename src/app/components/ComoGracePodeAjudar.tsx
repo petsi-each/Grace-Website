@@ -7,6 +7,33 @@ import ApartmentIcon from "./ApartmentIcon";
 export default function ComoGracePodeAjudar() {
     const emailGrace = "pet-si-each@usp.br";
 
+    const options = [
+        {
+            title: "Professores e outros grupos",
+            description: "Veja nossa galeria de atividades para replicá-las com seu público!",
+            icon: <TeacherIcon />,
+            color: "#E7442B"
+        },
+        {
+            title: "Escolas",
+            description: "Entre em contato para organizar uma atividade com suas alunas",
+            icon: <SchoolIcon />,
+            color: "#FA8632"
+        },
+        {
+            title: "Estudantes de graduação",
+            description: "Vire uma amiga do GRACE, junte-se à nossa comunidade e nos ajude a organizar atividades!",
+            icon: <AssignmentIcon />,
+            color: "#FFB884"
+        },
+        {
+            title: "Empresas",
+            description: "Entre em contato para organizarmos uma atividade para as alunas de graduação da USP!",
+            icon: <ApartmentIcon />,
+            color: "#E7442B"
+        },
+    ]
+
     return (
         <section className="grid grid-cols-2 gap-8">
             <div className="bg-green-500">
@@ -15,34 +42,20 @@ export default function ComoGracePodeAjudar() {
             </div>
             <div>
                 <h2 className="font-Poppins text-4xl font-bold text-cinzaGrace">Como o <span className="text-vermelhoGrace">GRACE</span> pode me ajudar?</h2>
-                <div>
-                    <span><TeacherIcon /></span>
-                    <span>
-                        <h3>Professores e outros grupos</h3>
-                        <p>Veja nossa galeria de atividades para replicá-las com seu público!</p>
-                    </span>
-                </div>
-                <div>
-                    <span><SchoolIcon /></span>
-                    <span>
-                        <h3>Escolas</h3>
-                        <p>Entre em contato para organizar uma atividade com suas alunas</p>
-                    </span>
-                </div>
-                <div>
-                    <span><AssignmentIcon /></span>
-                    <span>
-                        <h3>Estudantes de graduação</h3>
-                        <p>Vire uma amiga do GRACE, junte-se à nossa comunidade e nos ajude a organizar atividades!</p>
-                    </span>
-                </div>
-                <div>
-                    <span><ApartmentIcon /></span>
-                    <span>
-                        <h3>Empresas</h3>
-                        <p>Entre em contato para organizarmos uma atividade para as alunas de graduação da USP!</p>
-                    </span>
-                </div>
+
+                {
+                    options.map((option, idx) => (
+                        <div>
+                            <span>{option.icon}</span>
+                            <span>
+                                <h3>{option.title}</h3>
+                                <p>{option.description}</p>
+                            </span>
+                        </div>
+                    ))
+                }
+
+
                 <a href={`mailto:${emailGrace}`}>Entre em contato&nbsp;➡</a>
             </div>
         </section>
