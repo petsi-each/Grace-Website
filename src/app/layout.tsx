@@ -24,7 +24,7 @@ export default function RootLayout({
         <link rel="icon" href="./icon.png" sizes="any" />
       </head>
 
-      <body className={`px-8 ${inter.className}`}>
+      <body className={`${inter.className}`}>
         <Header />
         {children}
         <Footer />
