@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="bg-transparent relative flex flex-col justify-center items-center w-full h-full mt-14 before:content-[''] before:absolute before:w-full before:h-56 before:bg-[url('/waves.svg')] before:bg-no-repeat before:bg-top before:-z-10">
+    <footer className="bg-transparent relative flex flex-col justify-center items-center w-full h-56 mt-14 before:content-[''] before:absolute before:w-full before:h-56 before:bg-[url('/waves.svg')] before:bg-no-repeat before:bg-top before:-z-10">
       
       
 
@@ -48,7 +48,7 @@ export default function Footer() {
       <img src = "rodapeump.svg" alt=" "/>
       </ul>
       
-      <p className="text-brancoGrace" style={{ justifyContent:'flex-end', marginTop:20}}>
+      <p className="className: text-brancoGrace justify-end mt-4" >
          Desenvolvido por PET-SI 2024
     </p>
     </footer>
