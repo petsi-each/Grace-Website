@@ -11,16 +11,16 @@ export default function Footer() {
       <img src = "logoGrace.svg" alt=" " className="py-2"/>
 
       <ul className="flex p-1">
-        <a href="https://www.instagram.com/graceusp/?hl=pt-br" className="m-1.5">
+        <i className="m-1.5">
         
         <InstagramIconWithCircle 
-        />
-        </a>
+        link={"https://www.instagram.com/graceusp/?hl=pt-br"}/>
+        </i>
 
-        <a href="gracepetsi@gmail.com" className="m-1.5">
-        <EmailIconWithCircle />
+        <i className="m-1.5">
+        <EmailIconWithCircle link={"https://www.instagram.com/graceusp/?hl=pt-br"} />
       
-      </a>
+      </i>
       </ul>
 
    
