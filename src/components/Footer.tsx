@@ -18,7 +18,7 @@ export default function Footer() {
         </i>
 
         <i className="m-1.5">
-        <EmailIconWithCircle link={"https://www.instagram.com/graceusp/?hl=pt-br"} />
+        <EmailIconWithCircle link={"mailto:gracepetsi@gmail.com"} />
       
       </i>
       </ul>
