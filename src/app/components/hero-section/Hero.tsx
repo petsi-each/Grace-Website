@@ -20,7 +20,7 @@ export default function Hero(){
                         
                         {/* Garotas em Computação e Empreendedorismo*/}
                         <h1 className="font-Poppins font-bold text-7xl text-cinzaGrace max-w-max">
-                            <div className="bg-blue">Garotas em</div>
+                            <em className="bg-blue">Garotas em</em>
                             <div><span className="text-vermelhoGrace">Computação</span> e</div>
                             <div>Empreendedorismo</div>
                         </h1>
@@ -53,7 +53,7 @@ export default function Hero(){
                     <ImageG src="/home/hero-image.png" height={0} width={0} alt="Menina sorrindo testando um circuito de Arduino"/>
 
                     <div className="absolute">
-                        <ImageG className="w-10 h-10" src="/home/pattern-x-branco.png" height={0} width={0} alt="Imagem decorativa de fundo"/>
+                        <ImageG className="w-10 h-10" src="/home/pattern-x-branco.png" height={110} width={110} alt="Imagem decorativa de fundo"/>
                     </div>
 
                     <div className="absolute">
