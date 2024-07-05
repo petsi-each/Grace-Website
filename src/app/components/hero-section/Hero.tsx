@@ -19,14 +19,15 @@ export default function Hero(){
                     <div className="max-w-min">
                         
                         {/* Garotas em Computação e Empreendedorismo*/}
-                        <h1 className="font-Poppins font-bold text-7xl text-cinzaGrace max-w-max">
-                            <em className="bg-blue">Garotas em</em>
-                            <div><span className="text-vermelhoGrace">Computação</span> e</div>
-                            <div>Empreendedorismo</div>
+                        <h1 className="font-Poppins font-bold text-6xl text-cinzaGrace max-w-max">
+                            <span className="block">Garotas em</span>
+                            <span className="block"><span className="text-vermelhoGrace">Computação </span>e</span>
+                            <span className="block">Empreendedorismo</span>
                         </h1>
 
                         {/* Descrição GRACE */}
-                        <p className="pt-6 pb-9 font-normal leading-5">O GRACE tem como objetivo impulsionar a participação feminina na Computação e no Empreendedorismo desde o Ensino Fundamental até a Graduação.</p>
+
+                        <p className="pt-5 pb-9 font-medium leading-5">O GRACE tem como objetivo impulsionar a participação feminina na Computação e no Empreendedorismo desde o Ensino Fundamental até a Graduação.</p>
 
                     </div>
 
