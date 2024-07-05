@@ -25,7 +25,6 @@ export default function BalaoGrid(props: BalaoList) {
                     </div>
                 ))
             }
-        {/*TODO: ajustes de responsividade precisam ser adicionados*/}
         </div>
     );
 }
