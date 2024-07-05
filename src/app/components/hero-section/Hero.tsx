@@ -13,7 +13,7 @@ export default function Hero(){
         <section className="flex place-content-center relative">
             
             {/* 2 colunas*/}
-            <div className="grid grid-cols-8 gap-0 space-x-8 py-10">
+            <div className="grid grid-cols-8 gap-0 space-x-3 py-10">
 
                 <div className="col-span-5 content-center">
 
