@@ -35,7 +35,7 @@ export default function GaleriaDeAtividades() {
         <div className="overflow-x-clip" aria-label="Galeria de Atividades">
         <section className="font-Poppins text-cinzaGrace flex flex-col items-center justify-center text-center relative">
 
-            <div className="px-40 py-16">
+            <div className="px-8 md:px-16 lg:px-40 py-16">
                 <h1 className="text-4xl pb-8 font-bold">Galeria de Atividades</h1>
                 <p>Gostaria de replicar as oficinas, palestras e atividades do GRACE na sua comunidade? Escolha sua atividade favorita e aproveite seu documento de projeto!</p>
             </div>

@@ -6,7 +6,7 @@ import SecondaryButton from "@/components/SecondaryButton";
 
 export default function Hero(){
     return (
-        <section className="flex place-content-center relative min-h-[calc(100vh-74px)] pb-16">
+        <section className="flex place-content-center relative overflow-hidden min-h-[calc(100vh-74px)] pb-16">
             
             {/* 2 colunas*/}
             <div className="grid grid-cols-1 lg:grid-cols-8 space-x-2 md:space-x-0 py-10 items-center">
