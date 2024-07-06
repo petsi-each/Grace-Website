@@ -1,5 +1,6 @@
 import EmailIconWithCircle from "./BotaComCirculoGmail";
 import InstagramIconWithCircle from "./BotaoComCirculo";
+import ImageG from "./ImageG";
 
 export default function Footer() {
   return (
@@ -8,7 +9,7 @@ export default function Footer() {
       
 
 
-      <img src = "logoGrace.svg" alt=" " className="py-2 pt-8"/>
+      <ImageG width={55} height={95} src = "logoGrace.svg" alt=" " className="py-2 pt-8"/>
 
       <ul className="flex p-1">
         <i className="m-1.5">

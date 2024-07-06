@@ -1,8 +1,8 @@
 'use client'
 
-import LeftButton from "./LeftButton";
+import LeftButton from "@/components/LeftButton";
 import ImageG from "@/components/ImageG";
-import SecondaryButton from "../../../components/SecondaryButton";
+import SecondaryButton from "@/components/SecondaryButton";
 
 export default function Hero(){
     return (
