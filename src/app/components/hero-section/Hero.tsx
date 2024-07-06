@@ -6,10 +6,10 @@ import SecondaryButton from "../../../components/SecondaryButton";
 
 export default function Hero(){
     return (
-        <section className="flex place-content-center relative">
+        <section className="flex place-content-center relative min-h-[calc(100vh-74px)] pb-16">
             
             {/* 2 colunas*/}
-            <div className="grid grid-cols-1 lg:grid-cols-8 space-x-2 md:space-x-0 py-10">
+            <div className="grid grid-cols-1 lg:grid-cols-8 space-x-2 md:space-x-0 py-10 items-center">
 
                 <div className="lg:col-span-5 content-center">
 
@@ -46,20 +46,20 @@ export default function Hero(){
 
                 {/* Imagem da mayu */}
                 <div className="lg:col-span-3 w-full flex justify-center">
-                    <ImageG className="w-56 md:w-96 h-auto" src="/home/mayu-hero.png" height={0} width={0} alt="Menina sorrindo testando um circuito de Arduino"/>
+                    <ImageG className="w-56 md:w-96 h-fit" src="/home/mayu-hero.png" height={0} width={0} alt="Menina sorrindo testando um circuito de Arduino"/>
                 </div>
                 
             </div>
 
-            <div className="absolute top-20 md:top-40 -left-9 md:left-0 -z-40">
+            <div className="opacity-50 lg:opacity-100 absolute top-20 md:top-40 -left-9 md:left-0 -z-40">
                 <ImageG className="w-36" src="/home/pattern-x-cinza.png" height={0} width={0} alt="Imagem decorativa de fundo"/>
             </div>
 
-            <div className="absolute -bottom-8 md:bottom-0 -right-20 md:right-0">
+            <div className="opacity-50 lg:opacity-100 absolute -bottom-8 md:bottom-0 -right-20 md:right-0">
                 <ImageG className="w-72" src="/home/pattern-x-branco.png" height={0} width={0} alt="Imagem decorativa de fundo"/>
             </div>
 
-            <div className="absolute -z-40 -top-20 -right-28 md:-top-20 md:right-1 ">
+            <div className="opacity-50 lg:opacity-100 absolute -z-40 -top-20 -right-28 md:-top-20 md:right-1 ">
                 <ImageG className="w-52" src="/home/pattern-x-laranja.png" height={0} width={0} alt="Imagem decorativa de fundo"/>
             </div>
             
