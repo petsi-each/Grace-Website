@@ -1,15 +1,14 @@
 import EmailIconWithCircle from "./BotaComCirculoGmail";
 import InstagramIconWithCircle from "./BotaoComCirculo";
-import ImageG from "./ImageG";
 
 export default function Footer() {
   return (
-    <footer className="bg-transparent relative flex flex-col justify-center items-center w-full h-56 mt-14 before:content-[''] before:absolute before:bg-cover before:w-full before:h-56 before:bg-[url('/waves.svg')] before:bg-no-repeat before:bg-top before:-z-10">
+    <footer className="bg-transparent relative flex mt-12 flex-col justify-center items-center w-full h-56 mt-14 before:content-[''] before:absolute before:bg-cover before:w-full before:h-56 before:bg-[url('/waves.svg')] before:bg-no-repeat before:bg-top before:-z-10">
       
       
 
 
-      <ImageG src={"logoGrace.svg"} alt={" "} className="py-2"/>
+      <img src = "logoGrace.svg" alt=" " className="py-2 pt-8"/>
 
       <ul className="flex p-1">
         <i className="m-1.5">
