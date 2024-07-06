@@ -1,4 +1,4 @@
-import Hero from "@/app/components/hero-section/Hero";
+import Hero from "./components/Hero";
 import Oqueeograce from "./components/Oqueeograce";
 import ComoGracePodeAjudar from "./components/ComoGracePodeAjudar";
 import GaleriaDeAtividades from "./components/GaleriaDeAtividades";
