@@ -41,18 +41,18 @@ export default function Header() {
 
     return (
 
-        <header className="text-black font-Poppins m-4 lg:flex lg:justify-center lg:items-center relative">
+        <header className="text-black font-Poppins m-4 lg:flex lg:justify-center lg:items-center relative px-8">
 
             <div className="flex items-center">
 
                 <ImageG
-                    src="/logoHorizontal.png" 
+                    src="/logoHorizontal.svg" 
                     alt="GRACE USP"
                     width={125}
                     height={40}
                 />
                   
-                <button className="text-cinzaGrace w-full flex justify-end lg:hidden" onClick={() => setOpenMenu((prevValue) => !prevValue)}>
+                <button id="navButton" title="Menu de navegação" className="text-cinzaGrace w-full flex justify-end lg:hidden" onClick={() => setOpenMenu((prevValue) => !prevValue)}>
                     {openMenu ? <FiX size={30} /> : <FiMenu size={30} />}
                 </button>
 
