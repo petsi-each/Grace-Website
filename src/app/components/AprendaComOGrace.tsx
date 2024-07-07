@@ -13,14 +13,21 @@ interface MediaCardProps {
 
 function MediaCard(props: MediaCardProps) {
     return (
-        <div className="flex items-center text-sm bg-vermelhoGrace rounded-xl">
-            <ImageG className="w-1/2 h-auto max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl" src={props.src} alt={props.alt} width={200} height={200} />
-            <div className="flex flex-col justify-items text-brancoGrace h-full w-full py-4 pr-4">
+        <div className="grid lg:grid-cols-3 grid-cols-1 gap-8 items-center justify-center text-sm bg-vermelhoGrace rounded-xl p-8">
+            <div className="w-full h-full flex items-center justify-center">
+                <ImageG 
+                    src={props.src} 
+                    alt={props.alt} 
+                    width={448}
+                    height={448} 
+                />
+            </div>
+            <div className="flex flex-col lg:col-span-2 justify-items text-brancoGrace h-full w-full">
                 <h1 className="font-bold">{props.title}</h1>
-                <h2 className="w-5/6">{props.sneak_peek_text}</h2>
+                <h2 className="w-full">{props.sneak_peek_text}</h2>
                 <a
                     href={props.link}
-                    className="flex items-center self-end mr-8 text-brancoGrace font-semibold"
+                    className="flex items-center lg:self-end text-brancoGrace font-semibold"
                 >
                     Ler tudo <FiArrowRight />
                 </a>
@@ -55,7 +62,7 @@ function Topic(props: TopicProps) {
 
 export default function AprendaComOGrace() {
     return (
-        <section className="grid grid-cols-2 gap-4 p-8">
+        <section className="grid lg:grid-cols-2 grid-cols-1 gap-4 p-8">
             <div className="font-Poppins">
                 <h1 className="text-4xl text-cinzaGrace font-bold mb-14">Aprenda com o <b className="text-vermelhoGrace font-bold">GRACE</b></h1>
                 <Topic 
@@ -69,7 +76,7 @@ export default function AprendaComOGrace() {
                             src="/home/taxa_mulheres_curso.png"
                             alt="Taxa de mulheres nos cursos de graduação."
                             title="Infográfico – Mulheres nos cursos da EACH"
-                            sneak_peek_text="Andando pelos corredores do campus, frequentando salas de aula e laboratórios, ou até mesmo durante o período de graduação à distância"
+                            sneak_peek_text="Andando pelos corredores do campus, frequentando salas de aula e laboratórios, ou até mesmo durante o período de graduação à distância."
                             // TODO: Mudar esse link para o infográfico no site novo (o link atual direciona para o infográfico no site antigo)
                             link="http://each.uspnet.usp.br/petsi/grace/?p=773"
                         />
@@ -93,8 +100,14 @@ export default function AprendaComOGrace() {
                     }
                 />
             </div>
-            <div className="hidden sm:block">
-                <ImageG src="/home/grace_hopper.png" className="object-cover" alt={"Grace Hopper"} width={200} height={200} />
+            <div className="hidden sm:block bg-green-500">
+                <ImageG 
+                    src="/home/grace_hopper.png" 
+                    className="object-cover" 
+                    alt={"Grace Hopper"} 
+                    width={200} 
+                    height={200} 
+                />
             </div>
         </section>
     )
