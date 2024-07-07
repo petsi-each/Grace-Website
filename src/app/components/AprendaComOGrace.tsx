@@ -1,6 +1,6 @@
 "use client"
 import ImageG from "@/components/ImageG";
-import { ReactElement, useEffect, useState } from "react";
+import { ReactElement } from "react";
 import { FiArrowRight } from "react-icons/fi";
 
 interface MediaCardProps {
@@ -11,57 +11,13 @@ interface MediaCardProps {
     link: string
 }
 
-const truncateText = (text: string, wordLimit: number): string => {
-    const words: string[] = text.split(" ")
-    if(words.length <= wordLimit)
-        return text
-    return words.slice(0, wordLimit).join(' ') + '...'
-}
-
-const useWindowSize = () => {
-    const [windowSize, setWindowSize] = useState({
-        width: typeof window !== 'undefined' ? window.innerWidth : 0,
-        height: typeof window !== 'undefined' ? window.innerHeight : 0,
-    })
-
-    useEffect(() => {
-        const handleResize = () => {
-            setWindowSize({
-                width: window.innerWidth,
-                height: window.innerHeight
-            })
-        }
-
-        window.addEventListener('resize', handleResize)
-        
-        handleResize()
-
-        return () => window.removeEventListener('resize', handleResize)
-    }, [])
-
-    return windowSize
-}
-
 function MediaCard(props: MediaCardProps) {
-    const { width } = useWindowSize()
-
-    const getWordLimit = (width: number): number => {
-        if(width > 1200) return 20
-        if(width > 992) return 15
-        if(width > 768) return 12
-        if(width > 576) return 8
-        return 5
-    }
-
-    const wordLimit = getWordLimit(width)
-    const truncatedText = truncateText(props.sneak_peek_text, wordLimit)
-
     return (
         <div className="flex items-center text-sm bg-vermelhoGrace rounded-xl">
             <ImageG className="w-1/2 h-auto max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl" src={props.src} alt={props.alt} width={200} height={200} />
             <div className="flex flex-col justify-items text-brancoGrace h-full w-full py-4 pr-4">
                 <h1 className="font-bold">{props.title}</h1>
-                <h2 className="w-5/6">{truncatedText}</h2>
+                <h2 className="w-5/6">{props.sneak_peek_text}</h2>
                 <a
                     href={props.link}
                     className="flex items-center self-end mr-8 text-brancoGrace font-semibold"
