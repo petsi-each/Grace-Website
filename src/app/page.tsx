@@ -3,7 +3,7 @@ import Oqueeograce from "./components/Oqueeograce";
 import ComoGracePodeAjudar from "./components/ComoGracePodeAjudar";
 import GaleriaDeAtividades from "./components/GaleriaDeAtividades";
 
-import AprendaComOGrace from '@/app/components/AprendaComOGrace'
+import AprendaComOGrace from './components/AprendaComOGrace'
 
 export default function Home() {
   return (
@@ -13,7 +13,7 @@ export default function Home() {
       <AprendaComOGrace />
       <Hero />
       <Oqueeograce />
-      <ComoGracePodeAjudar /> 
+      <ComoGracePodeAjudar />
     </main>
   );
 }
