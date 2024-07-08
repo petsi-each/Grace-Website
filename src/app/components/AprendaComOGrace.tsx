@@ -13,7 +13,7 @@ interface MediaCardProps {
 
 function MediaCard(props: MediaCardProps) {
     return (
-        <div className="grid lg:grid-cols-3 grid-cols-1 gap-8 items-center justify-center text-sm bg-vermelhoGrace rounded-xl p-8">
+        <article className="grid lg:grid-cols-3 grid-cols-1 gap-8 items-center justify-center text-sm bg-vermelhoGrace rounded-xl p-8">
             <div className="w-full flex items-center justify-center">
                 <div className="lg:w-full lg:h-full w-1/3 h-1/3 flex items-center justify-center">
                     <ImageG
@@ -35,7 +35,7 @@ function MediaCard(props: MediaCardProps) {
                     Ler tudo <FiArrowRight />
                 </a>
             </div>
-        </div>
+        </article>
     )
 }
 
@@ -49,17 +49,18 @@ interface TopicProps {
 
 function Topic(props: TopicProps) {
     return (
-        <div className="mb-12">
-            <h2 className="font-bold text-2xl text-cinzaGrace mb-4">{props.title}</h2>
+        <article className="mb-12">
+            <header>
+                <h2 className="font-bold text-2xl text-cinzaGrace mb-4">{props.title}</h2>
+            </header>
             <p className="text-lg mb-8">{props.desc}</p>
-            {/* TODO: Trocar pelo componente*/}
             <a
                 href={props.link}
                 className="font-semibold text-vermelhoGrace flex items-center mb-12">
                 {props.link_text + " "} <FiArrowRight />
             </a>
             {props.embed}
-        </div>
+        </article>
     )
 }
 
@@ -67,7 +68,14 @@ export default function AprendaComOGrace() {
     return (
         <section className="grid lg:grid-cols-2 grid-cols-1 gap-4 px-8 lg:px-32 my-16">
             <div className="font-Poppins">
-                <h1 className="text-4xl text-cinzaGrace font-bold mb-14">Aprenda com o <b className="text-vermelhoGrace font-bold">GRACE</b></h1>
+                <header>
+                    <h1 className="text-4xl text-cinzaGrace font-bold mb-14">
+                        Aprenda com o 
+                        <b className="text-vermelhoGrace font-bold">
+                            GRACE
+                        </b>
+                    </h1>
+                </header>
                 <Topic
                     title="Conteudo Textual"
                     desc="Quer aprender mais sobre tecnologia e a área de T.I. para mulheres? Leia nossos textos!"
@@ -108,7 +116,7 @@ export default function AprendaComOGrace() {
                     src="/home/grace_hopper.png"
                     className="object-contain"
                     alt={"Grace Hopper"}
-                    fill={true}
+                    fill=   {true}
                 />
             </div>
         </section>
