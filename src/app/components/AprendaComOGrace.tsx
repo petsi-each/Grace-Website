@@ -14,13 +14,15 @@ interface MediaCardProps {
 function MediaCard(props: MediaCardProps) {
     return (
         <div className="grid lg:grid-cols-3 grid-cols-1 gap-8 items-center justify-center text-sm bg-vermelhoGrace rounded-xl p-8">
-            <div className="w-full h-full flex items-center justify-center">
-                <ImageG 
-                    src={props.src} 
-                    alt={props.alt} 
-                    width={448}
-                    height={448} 
-                />
+            <div className="w-full flex items-center justify-center">
+                <div className="lg:w-full lg:h-full w-1/3 h-1/3 flex items-center justify-center">
+                    <ImageG
+                        src={props.src}
+                        alt={props.alt}
+                        width={448}
+                        height={448}
+                    />
+                </div>
             </div>
             <div className="flex flex-col lg:col-span-2 justify-items text-brancoGrace h-full w-full">
                 <h1 className="font-bold">{props.title}</h1>
@@ -62,16 +64,16 @@ function Topic(props: TopicProps) {
 
 export default function AprendaComOGrace() {
     return (
-        <section className="grid lg:grid-cols-2 grid-cols-1 gap-4 p-8">
+        <section className="grid lg:grid-cols-2 grid-cols-1 gap-4 px-8 lg:px-32 my-16">
             <div className="font-Poppins">
                 <h1 className="text-4xl text-cinzaGrace font-bold mb-14">Aprenda com o <b className="text-vermelhoGrace font-bold">GRACE</b></h1>
-                <Topic 
-                    title="Conteudo Textual" 
+                <Topic
+                    title="Conteudo Textual"
                     desc="Quer aprender mais sobre tecnologia e a área de T.I. para mulheres? Leia nossos textos!"
                     link_text="Ver conteúdo"
                     // TODO: Mudar esse link para a aba de conteúdo do site novo (o link atual direciona para a home do site atual)
                     link="http://each.uspnet.usp.br/petsi/grace/"
-                    embed= {
+                    embed={
                         <MediaCard
                             src="/home/taxa_mulheres_curso.png"
                             alt="Taxa de mulheres nos cursos de graduação."
@@ -82,7 +84,7 @@ export default function AprendaComOGrace() {
                         />
                     }
                 />
-                <Topic 
+                <Topic
                     title="Podcast Fala, Grace!"
                     desc="Coloque o fone e escute o Fala, Grace!, no qual entrevistamos mulheres da área em parceria com PET-SI!"
                     link_text="Ver todos os episódios"
@@ -100,13 +102,12 @@ export default function AprendaComOGrace() {
                     }
                 />
             </div>
-            <div className="hidden sm:block bg-green-500">
-                <ImageG 
-                    src="/home/grace_hopper.png" 
-                    className="object-cover" 
-                    alt={"Grace Hopper"} 
-                    width={200} 
-                    height={200} 
+            <div className="relative">
+                <ImageG
+                    src="/home/grace_hopper.png"
+                    className="object-cover"
+                    alt={"Grace Hopper"}
+                    fill={true}
                 />
             </div>
         </section>
