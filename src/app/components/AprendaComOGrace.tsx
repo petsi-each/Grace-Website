@@ -106,7 +106,7 @@ export default function AprendaComOGrace() {
             <div className="relative">
                 <ImageG
                     src="/home/grace_hopper.png"
-                    className="object-cover"
+                    className="object-contain"
                     alt={"Grace Hopper"}
                     fill={true}
                 />
