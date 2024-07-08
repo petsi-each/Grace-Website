@@ -24,7 +24,7 @@ function MediaCard(props: MediaCardProps) {
                     />
                 </div>
             </div>
-            <div className="flex flex-col lg:col-span-2 justify-items text-brancoGrace h-full w-full">
+            <div className="flex flex-col lg:col-span-2 justify-center text-brancoGrace h-full w-full">
                 <h1 className="font-bold">{props.title}</h1>
                 <h2 className="w-full">{props.sneak_peek_text}</h2>
                 <a
