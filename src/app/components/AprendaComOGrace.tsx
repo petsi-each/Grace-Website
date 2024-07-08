@@ -17,6 +17,7 @@ function MediaCard(props: MediaCardProps) {
             <div className="w-full flex items-center justify-center">
                 <div className="lg:w-full lg:h-full w-1/3 h-1/3 flex items-center justify-center">
                     <ImageG
+                        className="rounded-lg"
                         src={props.src}
                         alt={props.alt}
                         width={448}
