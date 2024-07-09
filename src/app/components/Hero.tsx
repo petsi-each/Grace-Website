@@ -46,7 +46,7 @@ export default function Hero(){
 
                 {/* Imagem da mayu */}
                 <div className="lg:col-span-3 w-full flex justify-center">
-                    <ImageG className="w-56 md:w-96 h-fit" src="/home/mayu-hero.png" height={0} width={0} alt="Menina sorrindo testando um circuito de Arduino"/>
+                    <ImageG className="w-56 md:w-96 h-fit" src="/home/mayu-hero.png" priority height={0} width={0} alt="Menina sorrindo testando um circuito de Arduino"/>
                 </div>
                 
             </div>
