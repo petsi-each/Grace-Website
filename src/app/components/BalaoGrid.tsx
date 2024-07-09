@@ -19,8 +19,8 @@ export default function BalaoGrid(props: BalaoList) {
                     <div key={idx}>
                         <article className="flex flex-col p-4 xl:p-6 w-60 xl:w-72 h-60 xl:h-72 bg-brancoGrace rounded-2xl xl:rounded-3xl shadow-md"> {/*breaking points extras para telas xl*/}
                             <ImageG className="w-52 xl:w-60 rounded-2xl xl:rounded-3xl flex justify-center" src={balao.imagem} alt={balao.alternativo} width="2" height="2"/>
-                            <h2 className="font-Poppins font-bold text-vermelhoGrace text-lg flex justify-center my-0.5 xl:my-2">{balao.titulo}</h2>
-                            <p className="font-Poppins text-center text-black text-xs">{balao.descricao}</p>
+                            <h2 className=" font-bold text-vermelhoGrace text-lg flex justify-center my-0.5 xl:my-2">{balao.titulo}</h2>
+                            <p className=" text-center text-black text-xs">{balao.descricao}</p>
                         </article>
                     </div>
                 ))

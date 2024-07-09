@@ -16,7 +16,7 @@ export default function Hero(){
                     <div className="max-w-min flex flex-col justify-center">
                         
                         {/* Garotas em Computação e Empreendedorismo*/}
-                        <h1 className="font-Poppins font-bold text-3xl sm:text-6xl text-cinzaGrace max-w-max">
+                        <h1 className=" font-bold text-3xl sm:text-6xl text-cinzaGrace max-w-max">
                             <span className="block">Garotas em</span>
                             <span className="block"><span className="text-vermelhoGrace">Computação </span>e</span>
                             <span className="block">Empreendedorismo</span>

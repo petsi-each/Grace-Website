@@ -16,9 +16,6 @@ const config: Config = {
         pessegoGrace: "#FFB884",
         vermelhoGrace: "#E7442B",
       },
-      fontFamily: {
-        Poppins: ['Poppins', 'serif']
-      }
     },
   },
   plugins: [],
