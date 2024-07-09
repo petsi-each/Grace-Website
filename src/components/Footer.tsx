@@ -26,7 +26,7 @@ export default function Footer() {
       <ImageG src={"/rodapeump.svg"} alt={""} width={187} height={40}  />
       </ul>
       
-      <p className="className: text-brancoGrace justify-end mt-4" >
+      <p className="text-brancoGrace justify-end mt-4" >
          Desenvolvido por PET-SI 2024
     </p>
     </footer>
