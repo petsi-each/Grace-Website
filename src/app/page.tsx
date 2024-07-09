@@ -7,13 +7,12 @@ import AprendaComOGrace from './components/AprendaComOGrace'
 
 export default function Home() {
   return (
-    <main>
-      <GaleriaDeAtividades />
-      {/* Adicionar componentes da landingPage aqui aqui */}
-      <AprendaComOGrace />
+    <main>   
       <Hero />
       <Oqueeograce />
       <ComoGracePodeAjudar />
+      <AprendaComOGrace />
+      <GaleriaDeAtividades />
     </main>
   );
 }

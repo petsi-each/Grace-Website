@@ -13,19 +13,19 @@ interface MediaCardProps {
 
 function MediaCard(props: MediaCardProps) {
     return (
-        <article className="grid lg:grid-cols-3 grid-cols-1 gap-8 items-center justify-center text-sm bg-vermelhoGrace rounded-xl p-8">
-            <div className="w-full flex items-center justify-center">
-                <div className="lg:w-full lg:h-full w-1/3 h-1/3 flex items-center justify-center">
+        <article className="flex md:flex-row flex-col gap-8 items-center justify-center text-sm bg-vermelhoGrace rounded-xl p-8">
+            <div className="w-full md:w-fit flex items-center justify-center ">
+                <div className="lg:w-full lg:h-full flex items-center justify-center">
                     <ImageG
                         className="rounded-lg"
                         src={props.src}
                         alt={props.alt}
-                        width={448}
-                        height={448}
+                        width={128}
+                        height={128}
                     />
                 </div>
             </div>
-            <div className="flex flex-col lg:col-span-2 justify-center text-brancoGrace h-full w-full">
+            <div className="flex flex-col flex-grow justify-center text-brancoGrace h-full w-full">
                 <h1 className="font-bold">{props.title}</h1>
                 <h2 className="w-full mb-4">{props.sneak_peek_text}</h2>
                 <a
@@ -70,10 +70,7 @@ export default function AprendaComOGrace() {
             <div className="font-Poppins">
                 <header>
                     <h1 className="text-4xl text-cinzaGrace font-bold mb-14">
-                        Aprenda com o 
-                        <b className="text-vermelhoGrace font-bold">
-                            GRACE
-                        </b>
+                        Aprenda com o <b className="text-vermelhoGrace font-bold">GRACE</b>
                     </h1>
                 </header>
                 <Topic
