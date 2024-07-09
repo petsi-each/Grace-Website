@@ -98,6 +98,7 @@ export default function AprendaComOGrace() {
                     embed={
                         /* a cor é setada automaticamente pela api do spotify :c */
                         <iframe
+                            title="Episódio do podcast Fala, Grace! no spotify"
                             className="rounded-xl"
                             src="https://open.spotify.com/embed/episode/23pZonZukOAEu3gAhMqFlR?utm_source=generator"
                             width="100%"
