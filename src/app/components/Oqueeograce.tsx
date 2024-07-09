@@ -44,13 +44,13 @@ export default function Oqueeograce() {
 
     return (
         <div className="my-16">
-            <ImageG className="-mb-2 w-screen" src="/home/oqueeograceBGT.svg" alt=" " width="2" height="2"/> 
+            <ImageG className="-mb-2 w-screen" src="/home/oqueeograceBGT.svg" alt={""} width="2" height="2"/> 
             <section className="bg-gradient-to-b from-vermelhoGrace to-[#feb581] py-12 lg:py-4 px-12 md:px-16 lg:px-32 flex flex-col items-center"> {/*TODO: (bug) A onda superior está sendo reinderizada com um pequeno espaço à esquerda pelo Firefox*/} 
                 <h1 className="mb-4 md:mb-8 lg:mb-12  font-bold text-center text-brancoGrace text-4xl">O que fazemos?</h1> 
                 <p className=" text-center text-brancoGrace text-lg">O GRACE é um projeto de extensão do curso de Sistemas de Informação (Escola de Artes, CIências e Humanidades) da Universidade de São Paulo. Nosso objetivo é <b>incentivar</b> e <b>manter</b> meninas na área da computação, a fim de diminuir a disparidade de gênero, por meio de atividades práticas e tecnológicas!</p>
                 <BalaoGrid lista={baloes}/>
             </section>
-            <ImageG className="-mt-2 w-screen" src="/home/oqueeograceBGB.svg" alt=" " width="2" height="2"/>
+            <ImageG className="-mt-2 w-screen" src="/home/oqueeograceBGB.svg" alt={""} width="2" height="2"/>
         </div>
     );
 }
