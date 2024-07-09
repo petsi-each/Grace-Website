@@ -52,15 +52,15 @@ export default function Hero(){
             </div>
 
             <div className="opacity-50  absolute top-20 md:top-40 -left-9 md:left-0 -z-40">
-                <ImageG className="w-36" src="/home/pattern-x-cinza.png" height={0} width={0} alt="Imagem decorativa de fundo"/>
+                <ImageG src="/home/pattern-x-cinza.png" height={494} width={144} alt="Imagem decorativa de fundo"/>
             </div>
 
             <div className="opacity-50 absolute -bottom-8 md:bottom-0 -right-20 md:right-0">
-                <ImageG className="w-72" src="/home/pattern-x-branco.png" height={0} width={0} alt="Imagem decorativa de fundo"/>
+                <ImageG src="/home/pattern-x-branco.png" height={988} width={288} alt="Imagem decorativa de fundo"/>
             </div>
 
             <div className="opacity-50  absolute -z-40 -top-20 -right-28 md:-top-20 md:right-1 ">
-                <ImageG className="w-52" src="/home/pattern-x-laranja.png" height={0} width={0} alt="Imagem decorativa de fundo"/>
+                <ImageG src="/home/pattern-x-laranja.png" height={714} width={208} alt="Imagem decorativa de fundo"/>
             </div>
             
         </section>
