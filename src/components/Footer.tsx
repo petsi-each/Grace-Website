@@ -27,7 +27,7 @@ export default function Footer() {
       
       <ImageG width={55} height={95} src={"/logoGrace.svg"} alt={""} className="py-2 pt-8"/>
 
-      <ul className="flex p-1">
+      <div className="flex p-1">
         <i className="m-1.5">
         
         <IconWithCircle 
@@ -45,11 +45,11 @@ export default function Footer() {
         />
       
       </i>
-      </ul>
+      </div>
 
-      <ul className="flex">
+      <div className="flex">
       <ImageG src={"/rodapeump.svg"} alt={""} width={187} height={40}  />
-      </ul>
+      </div>
       
       <p className="text-brancoGrace justify-end mt-4" >
          Desenvolvido por PET-SI 2024
