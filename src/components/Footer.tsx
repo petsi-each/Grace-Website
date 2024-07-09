@@ -23,7 +23,7 @@ export default function Footer() {
       </ul>
 
       <ul className="flex">
-      <img src = "rodapeump.svg" alt=" "/>
+      <ImageG src={"/rodapeump.svg"} alt={""} width={187} height={40}  />
       </ul>
       
       <p className="className: text-brancoGrace justify-end mt-4" >
