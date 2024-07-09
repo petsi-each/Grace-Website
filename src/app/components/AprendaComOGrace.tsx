@@ -67,7 +67,7 @@ function Topic(props: TopicProps) {
 export default function AprendaComOGrace() {
     return (
         <section className="grid lg:grid-cols-2 grid-cols-1 gap-4 px-8 lg:px-32 my-16">
-            <div className="font-Poppins">
+            <div className="">
                 <header>
                     <h1 className="text-4xl text-cinzaGrace font-bold mb-14">
                         Aprenda com o <b className="text-vermelhoGrace font-bold">GRACE</b>
@@ -98,6 +98,7 @@ export default function AprendaComOGrace() {
                     embed={
                         /* a cor é setada automaticamente pela api do spotify :c */
                         <iframe
+                            title="Episódio do podcast Fala, Grace! no spotify"
                             className="rounded-xl"
                             src="https://open.spotify.com/embed/episode/23pZonZukOAEu3gAhMqFlR?utm_source=generator"
                             width="100%"

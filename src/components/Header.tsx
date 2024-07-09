@@ -41,7 +41,7 @@ export default function Header() {
 
     return (
 
-        <header className="text-black font-Poppins m-4 lg:flex lg:justify-center lg:items-center relative px-8">
+        <header className="text-black  m-4 lg:flex lg:justify-center lg:items-center relative px-8">
 
             <div className="flex items-center">
 
