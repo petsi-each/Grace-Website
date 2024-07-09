@@ -1,6 +1,23 @@
-import EmailIconWithCircle from "./BotaComCirculoGmail";
-import InstagramIconWithCircle from "./BotaoComCirculo";
+import { FiMail,FiInstagram } from "react-icons/fi";
 import ImageG from "./ImageG";
+import { ReactElement } from "react";
+
+
+interface IconWithCircleProps {
+  link: string;
+  icon: ReactElement;
+}
+
+const IconWithCircle: React.FC<IconWithCircleProps> = ({ link, icon }) => (
+  <a href={link} target="_blank" title="" rel="noopener noreferrer" style={{ display: "inline-block" }}>
+    <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="22" cy="22" r="22" fill="#FEFDFD" />
+      <g transform="translate(11, 11)" className='text-vermelhoGrace'> 
+        {icon}
+      </g>
+    </svg>
+  </a>
+);
 
 export default function Footer() {
   const pathway =   process.env.NODE_ENV === "production" ? `before:bg-[url('/Grace-Website/waves.svg')]` : `before:bg-[url('/waves.svg')]`; 
@@ -12,12 +29,17 @@ export default function Footer() {
       <ul className="flex p-1">
         <i className="m-1.5">
         
-        <InstagramIconWithCircle 
-        link={"https://www.instagram.com/graceusp/?hl=pt-br"}/>
+        <IconWithCircle 
+        link={"https://www.instagram.com/graceusp/?hl=pt-br"}
+        icon={<FiInstagram size={22} fill="none" />}
+        />
         </i>
 
         <i className="m-1.5">
-        <EmailIconWithCircle link={"mailto:gracepetsi@gmail.com"} />
+        <IconWithCircle 
+        link={"mailto:gracepetsi@gmail.com"}
+        icon={<FiMail size={22} className="text-vermelhoGrace" />}
+        />
       
       </i>
       </ul>
