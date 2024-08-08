@@ -21,7 +21,7 @@ const IconWithCircle: React.FC<IconWithCircleProps> = ({ link, icon, title }) =>
 );
 
 export default function Footer() {
-  const pathway =   process.env.NODE_ENV === "production" ? `before:bg-[url('/Grace-Website/waves.svg')]` : `before:bg-[url('/waves.svg')]`; 
+  const pathway = `before:bg-[url('/waves.svg')]`; 
   return (
     <footer className={`bg-transparent relative flex mt-12 flex-col justify-center items-center w-full h-56 mt-14 before:content-[''] before:absolute before:bg-cover before:w-full before:h-56  before:bg-no-repeat before:bg-top before:-z-10 `+ pathway}>
       
